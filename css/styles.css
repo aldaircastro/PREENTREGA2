@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+p {
+    color: azure;
+    font-family: 'Abel', sans-serif;
+}
+
+
+/*index*/
+
+.grid-container {
+    width: 42%;
+    padding: 3rem;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 21px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0rem;
+    grid-template-areas:
+    "text1 text2"
+    "text3 imagen4";
+}
+
+@media screen and (max-width: 767px) {
+    .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1;
+    grid-template-areas:
+    "text1"
+    "text2"
+    "text3"
+    "text4";
+    }
+}
+
+
+.text1 {
+    text-align: right;
+    margin-top: 9rem;
+}
+
+.text1 {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+
+.text2 {
+    text-align: left;    
+    margin-top: 9rem;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.text3 {
+    text-align: right;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+  
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+    
+
+.text4 {
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.imagen_index {
+    height: auto;
+}
+
+section#text1 {
+    grid-area: tex1;
+}
+     
+section#text2 {
+    grid-area: text2;
+}
+
+section#text3 {
+    grid-area: text3;
+    text-align: right
+}
+
+section#imagen4 {
+    grid-area: imagen4;
+}
+
+body {
+    background-image: url(../img/fondo-negro-patron-de-luz-abstrato_fondos-de-pantalla-abstratos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.texto_footer {
+    transform: translate(140px,50px);
+}
+
+.navbar-brand {
+    font-family: 'Abel', sans-serif;
+    color: rgb(10, 10, 10);
+}
+
+
+/*tienda*/
+
+.card-profe {
+    width: 100%auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.padre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+   @media screen and (max-width: 740px) {
+    .padre-cards {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+   @media screen and (max-width: 538px) {
+    .padre-cards {
+        grid-template-columns: 1fr;
+
+    }
+   
+}
+
+
+.card__parrafo {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    text-align: center;
+
+}
+
+.card__parrafo--precio {
+    color: white;
+    text-align: center;
+}
+
+
+.card__img {
+    padding: 5rem;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagenes-tienda:hover {
+transform: scale(1.5);
+}
+
+.button:hover{
+    background-color:rgb(73, 71, 71)
+}
+
+
+
+
+/*Curso de Dibujo*/
+
+.h1_cursodedibujo {
+    color:rgb(170, 155, 155);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.body_cursodedibujo {
+    background-image: url(../Img/claro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-principal-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;    
+}
+
+
+.h1_cursodedibujo {
+    color:rgb(172, 164, 164);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+.h1_cursodedibujo {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+
+.parrafo_cursodedibujo {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.titulo-curso {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+
+
+/*info*/
+
+.body_info {
+    background-image: url(../img/fondo-negro-patron-de-luz-abstrato_fondos-de-pantalla-abstratos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1_info {
+    color:rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 10rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.h2_info {
+    color:rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: cleft;
+}
+
+.texto_info {
+    color:rgb(255, 254, 254);
+    margin-top: 1rem;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.fieldset_info {
+    margin-left: 29rem;
+    margin-right: 29rem;
+    border: double rgb(49, 44, 44);
+    padding: 2rem; 
+    margin-bottom: 3rem;   
+}
+
+.imageninfo {
+    width: 100%;
+   
+}
+
+
+
+
+/*Videos tutoriales*/
+
+.cardsvideo {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+.h1_videostutoriales {
+    color:rgb(170, 155, 155);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 10rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.video_videostutoriales {
+    padding: 2rem;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parrafos_videostutoriales {
+    color: azure;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+/*------------------*/
