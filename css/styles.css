@@ -223,8 +223,12 @@ body {
     margin-right: auto;
 }
 
+.imagenes-tienda {
+transition: width 2s;
+}
+
 .imagenes-tienda:hover {
-transform: scale(1.5);
+width: 600px;
 }
 
 .button:hover{
@@ -246,12 +250,17 @@ transform: scale(1.5);
 }
 
 .body_cursodedibujo {
-    background-image: url(../Img/claro.png);
+    background-image: url(../Img/fondo-negro-patron-de-luz-abstrato_fondos-de-pantalla-abstratos.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
+
+.form-cursodibujo p{
+    color: azure;
+}
+
 
 .section-principal-formulario{
     display: flex;
@@ -263,9 +272,10 @@ transform: scale(1.5);
 .formulario {
     margin: 20px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    color: azure;  
+    
 }
-
 
 .h1_cursodedibujo {
     color:rgb(172, 164, 164);
@@ -293,7 +303,7 @@ transform: scale(1.5);
  
 
 .parrafo_cursodedibujo {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 0.1rem;
@@ -309,6 +319,9 @@ transform: scale(1.5);
     margin: 20px;
 }
 
+.fieldset-curso p {
+    color: azure
+}
 
 
 /*info*/
